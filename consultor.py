@@ -126,4 +126,5 @@ def query_database():
         return jsonify({"error": f"Error general: {str(e)}"}), 500
 
 if __name__ == "__main__":
-    app.run(port=3001, debug=True)
+    app.run(debug=True, host="0.0.0.0", port=3001)
+
